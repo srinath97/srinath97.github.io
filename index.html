@@ -1,41 +1,296 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 
-	<head>
-		  <title>Flique</title>
-		  <meta charset="utf-8">
-		  <meta name="viewport" content="width=device-width, initial-scale=1">
-		  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		  <link rel="stylesheet" href="res/styles/style.css"
-		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	</head>
+  <head>
 
-	<body>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-		<nav class="navbar navbar-default">
-		  <div class="container-fluid">
-		    <div class="navbar-header">
-		      <a class="navbar-brand" href="#">Flique</a>
-		    </div>
-		    <ul class="nav navbar-nav">
-		      <li class="active"><a href="#">Home</a></li>
-		      <li><a href="#">Store</a></li>
-		      <li><a href="#">Blogs</a></li>
-		      <li><a href="#">Tournaments</a></li>
-		    </ul>
-		  </div>
-		</nav>
-		  
-		<div class="jumbotron">
-		  <h1 class="display-3">Flique</h1>
-		  <p class="lead">The one-stop shop for football!</p>
-		  <hr class="my-4">
-		  <p class="lead">
-		    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-		  </p>
-		</div>
+    <title>Flique</title>
 
-	</body>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/freelancer.min.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">FLIQUE</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto navbar-right">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#store">Store</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#blogs">Blogs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#tournaments">Tournaments</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+	          <li class="dropdown nav-item">
+                 <a href="http://www.jquery2dotnet.com" class="dropdown-toggle nav-link js-scroll-trigger" data-toggle="dropdown">Sign in <b class="caret"></b></a>
+                 <ul class="dropdown-menu" style="padding: 15px;min-width: 250px;">
+                    <li>
+                       <div class="row">
+                          <div class="col-md-12">
+                             <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+                                <div class="form-group">
+                                   <label class="sr-only" for="exampleInputEmail2">Email address</label>
+                                   <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required>
+                                </div>
+                                <div class="form-group">
+                                   <label class="sr-only" for="exampleInputPassword2">Password</label>
+                                   <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
+                                </div>
+                                <div class="checkbox">
+                                   <label>
+                                   <input type="checkbox"> Remember me
+                                   </label>
+                                </div>
+                                <div class="form-group">
+                                   <button type="submit" class="btn btn-success btn-block">Sign in</button>
+                                </div>
+                             </form>
+                          </div>
+                       </div>
+                    </li>
+                    <input class="btn btn-primary btn-block" type="button" id="sign-in-google" value="Sign In with Google">
+                 </ul>
+              </li>
+           </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+  	<div class="" id="home">
+  	    <header class="masthead">
+  	      <div class="container">
+  	        <img class="img-fluid" src="img/logo.png" alt="">
+  	        <div class="intro-text">
+  	          <span class="name">Flique</span>
+  	          <hr class="star-light">
+  	          <span class="skills">The one-stop shop for football</span>
+  	        </div>
+  	      </div>
+  	    </header>
+  	</div>
+
+    <!-- STORE SECTION -->
+    <section class="store" id="store">
+      <div class="container">
+        <div class="row col-md-12">
+          <div class="col-sm-offset-2 col-md-6">
+          	<img src="img/store.png" class="img-fluid">
+     		</div>
+     		<div class="col-md-6">
+  	        <div class="">
+  		        <h2 class="text-center">STORE</h2>
+  		        <p>
+  		          <div>
+  		            <p>Bacon ipsum dolor amet rump landjaeger bresaola porchetta doner ham chuck alcatra t-bone. Hamburger filet mignon bacon kielbasa. Tri-tip biltong salami, ribeye andouille t-bone corned beef pancetta. Andouille pork ball tip filet mignon pork loin meatloaf. Tongue burgdoggen corned beef ball tip frankfurter short loin, drumstick pancetta pork chop chicken picanha.</p>
+  		          </div>
+  		          <div class="col-lg-8 mx-auto text-center">
+  		            <a href="store.html" class="btn btn-lg btn-outline">
+  		              Go To Store 
+  		            </a>
+  		          </div>
+  		      </p>
+        		</div>
+        	</div>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG SECTION -->
+    <section class="blog" id="blogs">
+      <div class="container">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-sm-offset-1 col-md-6">
+    	        <div class="">
+    		        <p><h2 class="text-center">BLOGS</h2><p>
+    		        	<p>
+    		          <div>
+    		            <p>Bacon ipsum dolor amet rump landjaeger bresaola porchetta doner ham chuck alcatra t-bone. Hamburger filet mignon bacon kielbasa. Tri-tip biltong salami, ribeye andouille t-bone corned beef pancetta. Andouille pork ball tip filet mignon pork loin meatloaf. Tongue burgdoggen corned beef ball tip frankfurter short loin, drumstick pancetta pork chop chicken picanha.</p>
+    		          </div>
+    		          <div class="col-lg-8 mx-auto text-center">
+    		            <a href="#" class="btn btn-lg btn-outline-dark">
+    		              Go To Blogs
+    		            </a>
+    		          </div>
+    		          <p>
+          		</div>
+          	</div>
+          	<div class="col-md-6">
+            	<img src="img/blog.jpg" class="img-fluid">
+       		</div>
+          </div>
+      	</div>
+      </div>
+    </section>
+
+
+    <!-- TOURNAMENT SECTION -->
+    <section class="tournaments" id="tournaments">
+      <div class="container">
+        <div class="row col-md-12">
+          <div class="col-sm-offset-2 col-md-6">
+          	<img src="img/tournaments.jpg" class="img-fluid">
+     		</div>
+     		<div class="col-md-6">
+  	        <div class="">
+  		        <h2 class="text-center">TOURNAMENT</h2>
+  		        <p>
+  		          <div>
+  		            <p>Bacon ipsum dolor amet rump landjaeger bresaola porchetta doner ham chuck alcatra t-bone. Hamburger filet mignon bacon kielbasa. Tri-tip biltong salami, ribeye andouille t-bone corned beef pancetta. Andouille pork ball tip filet mignon pork loin meatloaf. Tongue burgdoggen corned beef ball tip frankfurter short loin, drumstick pancetta pork chop chicken picanha.</p>
+  		          </div>
+  		          <div class="col-lg-8 mx-auto text-center">
+  		            <a href="#" class="btn btn-lg btn-outline">
+  		              Go To Tournament
+  		            </a>
+  		          </div>
+  		      </p>
+        		</div>
+        	</div>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-sm-offset-1 col-md-6">
+    	        <div class="">
+    		        <p><h2 class="text-center">ABOUT</h2><p>
+    		        	<p>
+    		          <div>
+    		            <p>Bacon ipsum dolor amet rump landjaeger bresaola porchetta doner ham chuck alcatra t-bone. Hamburger filet mignon bacon kielbasa. Tri-tip biltong salami, ribeye andouille t-bone corned beef pancetta. Andouille pork ball tip filet mignon pork loin meatloaf. Tongue burgdoggen corned beef ball tip frankfurter short loin, drumstick pancetta pork chop chicken picanha.</p>
+    		          </div>
+    		          <div class="col-lg-8 mx-auto text-center">
+    		            <a href="#" class="btn btn-lg btn-outline-dark">
+    		              Go To About 
+    		            </a>
+    		          </div>
+    		          <p>
+          		</div>
+          	</div>
+          	<div class="col-md-6">
+            	<img src="img/aboutus.jpg" class="img-fluid">
+       		</div>
+          </div>
+      	</div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+      <div class="footer-above">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col col-md-4">
+              <h3>Location</h3>
+              <p>3481 Melrose Place
+                <br>Beverly Hills, CA 90210</p>
+            </div>
+            <div class="footer-col col-md-4">
+              <h3>Around the Web</h3>
+              <ul class="list-inline">
+                <li class="list-inline-item">
+                  <a class="btn-social btn-outline" href="#">
+                    <i class="fa fa-fw fa-facebook"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-social btn-outline" href="#">
+                    <i class="fa fa-fw fa-google-plus"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-social btn-outline" href="#">
+                    <i class="fa fa-fw fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-social btn-outline" href="#">
+                    <i class="fa fa-fw fa-linkedin"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-social btn-outline" href="#">
+                    <i class="fa fa-fw fa-dribbble"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-col col-md-4">
+              <h3>About Freelancer</h3>
+              <p>Freelance is a free to use, open source Bootstrap theme created by
+                <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-below">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              Copyright &copy; Flique 2017
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top d-lg-none">
+      <a class="btn btn-primary js-scroll-trigger" href="#page-top">
+        <i class="fa fa-chevron-up"></i>
+      </a>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/freelancer.min.js"></script>
+
+  </body>
 
 </html>
