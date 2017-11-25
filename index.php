@@ -13,12 +13,14 @@
     <!-- Bootstrap core CSS -->
   </head>
   <body>
-
     <div class="g-signin2" data-onsuccess="onSignIn"></div>
       <script type="text/javascript">
         
         function onSignIn(googleUser) {
           var profile = googleUser.getBasicProfile();
+          <?php $abc = "<script>document.write(profile.getName())</script>"?>   
+
+          
           console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
           console.log('Name: ' + profile.getName());
           console.log('Image URL: ' + profile.getImageUrl());
@@ -27,7 +29,7 @@
         }
       </script>
   </body>
-
+<?php echo $abc; ?>
 <a href="#" onclick="signOut();">Sign out</a>
 <script>
   function signOut() {
